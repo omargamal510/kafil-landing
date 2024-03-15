@@ -12,6 +12,8 @@
 :root {
     --grey-400: #8692A6;
     --grey-500: #696F79;
+    --grey-50: #F6F6F6;
+    --grey-800: #333333;
     --primary-900: #1DBF73
 }
 
@@ -98,14 +100,59 @@ nav {
     box-shadow: 0px 3px 40px -5px #20202012;
     background-color: #FFF;
     border-radius: 8px;
-    padding: 15px;
+    padding: 20px;
+    overflow: hidden;
 }
 
 .profile-card h2 {
     color: #000;
     font-size: 16px;
-    line-height: 19.2px;
     font-weight: 600;
 }
+
+
+.profile-card .seller-name {
+    margin-top: 15px;
+}
+
+.profile-rate {
+    margin-top: -10px;
+}
+
+.profile-links a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--grey-50);
+}
+
+.profile-desc p {
+    color: var(--grey-800);
+    font-weight: 500;
+    line-height: 16.8px;
+    letter-spacing: 0.5%;
+    margin-top: 15px;
+}
+
+
+.profile-contact {
+    width: 100%;
+}
+
+.profile-contact button {
+    background-color: var(--primary-900);
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    width: 100% !important;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /* End Profile Card */
