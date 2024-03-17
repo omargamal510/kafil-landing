@@ -14,6 +14,7 @@
     --grey-500: #696F79;
     --grey-50: #F6F6F6;
     --grey-800: #333333;
+    --grey-100: #F2F2F2;
     --primary-900: #1DBF73
 }
 
@@ -94,6 +95,96 @@ nav {
 }
 
 /* End Slogan */
+
+
+/* Start Slider */
+.carousel-indicators {
+    bottom: 20px;
+}
+
+.carousel-indicators .crs {
+    border-radius: 50%;
+    height: 10px !important;
+    width: 10px !important;
+}
+
+.carousel-indicators button.active {
+    background-color: var(--primary-900);
+}
+
+
+.carousel-control-next,
+.carousel-control-prev {
+    margin: 0px 15px;
+    color: #FFF !important;
+    background-color: #ffffff7c !important;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    transform: translateY(-50%, -50%);
+    opacity: 1 !important;
+    transition: all .2s linear;
+    font-weight: 100;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    background-color: #FFF !important;
+    color: var(--primary-900) !important;
+}
+
+.carousel-control-next {}
+
+.carousel-control-next span:first-of-type,
+.carousel-control-prev span:first-of-type {
+    color: #000 !important;
+    opacity: 1 !important;
+}
+
+
+
+
+
+/* End Slider */
+
+
+/* Start Description */
+.desc h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28.8px;
+    letter-spacing: 0.5%;
+}
+
+.desc p {
+    background-color: #FFF;
+    padding: 40px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5%;
+    box-shadow: 0px 3px 40px -5px #20202012;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/* End Description */
+
+
+
+/* ============= Right side ============= */
+/* ============= Right side ============= */
+/* ============= Right side ============= */
+/* ============= Right side ============= */
+/* ============= Right side ============= */
+/* ============= Right side ============= */
+/* ============= Right side ============= */
+
+
+
+
+
+
 
 /* Start Profile card */
 .profile-card {
