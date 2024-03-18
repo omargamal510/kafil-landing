@@ -67,3 +67,17 @@ notifCounter();
 
 
 /* End Navbar */
+
+
+// Start Services
+// const selector = Array.from(document.querySelectorAll('.selector')); // converting from NodeList to array
+// const selectAllBtn = document.querySelector('.select-all');
+
+
+
+// selectAllBtn.addEventListener('click', () => {
+//     selector.map((ele) => ele.checked = true)
+// })
+
+
+// End Services

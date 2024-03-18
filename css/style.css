@@ -170,6 +170,35 @@ nav {
 
 /* End Description */
 
+/* Start Services */
+.selector {
+    cursor: pointer;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    accent-color: green;
+    clip-path: circle(40% at 50% 50%);
+    border: 2px solid #F00;
+}
+
+/* End Services */
+
+/* Start Purchase */
+.purchase .container {
+    background-color: #F00;
+}
+
+/* End Purchase */
+
+
+
+
+
+
+
+
+
+
 
 
 /* ============= Right side ============= */
@@ -186,12 +215,8 @@ nav {
 /* Right side mains */
 .right-main {}
 
-/* Right side mains */
 
-
-
-/* Start Profile card */
-.profile-card {
+.right-side-white {
     box-shadow: 0px 3px 40px -5px #20202012;
     background-color: #FFF;
     border-radius: 8px;
@@ -199,11 +224,18 @@ nav {
     overflow: hidden;
 }
 
-.profile-card h2 {
+.right-side-white h2 {
     color: #000;
     font-size: 16px;
     font-weight: 600;
 }
+
+/* Right side mains */
+
+
+
+/* Start Profile card */
+
 
 
 .profile-card .seller-name {
@@ -257,19 +289,15 @@ nav {
 
 
 /* Start Info */
-
-.info {
-    border-radius: 8px;
-    padding: 20px;
-    background-color: #FFF;
-    box-shadow: 0px 3px 40px -5px #20202012;
-}
-
-.info h2 {
+.info h3 {
+    font-size: 14px;
+    font-weight: 500px;
     color: #000;
-    font-size: 16px;
-    font-weight: 600;
+    margin-top: 3px;
 }
 
+.info p {
+    font-weight: 500;
+}
 
 /* End Info */
