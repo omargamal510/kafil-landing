@@ -80,15 +80,27 @@ notifCounter();
 // })
 
 
-const dummy = document.querySelector('.dummy');
+const checkDiv = Array.from(document.querySelectorAll('.check-div'));
+const selectAll = document.querySelector('.select-all')
 
-dummy.addEventListener('click', () => {
-    dummy.classList.toggle('dummy-active');
 
-    if (dummy.classList.contains('dummy-active')) {
-        alert('herll')
-    }
+checkDiv.map((ele) => {
+    ele.addEventListener('click', () => {
+        ele.classList.toggle('dummy-active')
+    })
+})
+
+selectAll.addEventListener('click', () => {
+    checkDiv.map((ele) => {
+        ele.classList.add('dummy-active')
+    })
 })
 
 
+
 // End Services
+
+
+// Start Purchase
+
+// End Purcahse
