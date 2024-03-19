@@ -80,4 +80,15 @@ notifCounter();
 // })
 
 
+const dummy = document.querySelector('.dummy');
+
+dummy.addEventListener('click', () => {
+    dummy.classList.toggle('dummy-active');
+
+    if (dummy.classList.contains('dummy-active')) {
+        alert('herll')
+    }
+})
+
+
 // End Services

@@ -14,8 +14,10 @@
     --grey-500: #696F79;
     --grey-50: #F6F6F6;
     --grey-800: #333333;
+    --grey-300: #C3C5C8;
     --grey-100: #F2F2F2;
-    --primary-900: #1DBF73
+    --primary-900: #1DBF73;
+    --primary-100: #E9F9F1;
 }
 
 /* main variables */
@@ -178,7 +180,88 @@ nav {
     width: 40px;
     accent-color: green;
     clip-path: circle(40% at 50% 50%);
-    border: 2px solid #F00;
+}
+
+.border-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 48px;
+    border: 2px solid #CCC;
+    border-radius: 50%;
+}
+
+.services .service p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.68px;
+}
+
+.select-all {
+    background-color: #f6f6f6;
+    border: none;
+    color: var(--grey-300)
+}
+
+.checkbox-round {
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-round:checked {
+    background-color: gray;
+}
+
+.labo {
+    position: relative;
+}
+
+.lab {
+    position: absolute;
+    right: 0;
+    left: 5px;
+    z-index: -1;
+}
+
+.checkbox-round:checked {
+    background-color: gray;
+}
+
+.service-info {
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 5px 10px 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-100);
+    color: var(--primary-900);
+}
+
+
+.dummy {
+    width: 50px;
+    height: 50px;
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dummy-active {
+    background-color: #F00;
 }
 
 /* End Services */
