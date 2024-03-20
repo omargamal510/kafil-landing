@@ -592,3 +592,33 @@ nav {
 }
 
 /* End Info */
+
+/* Start Others */
+.others h2 {
+    font-size: 16px !important;
+    font-weight: 600;
+}
+
+.others-sections {
+    margin-top: 15px;
+}
+
+.others h6 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--grey-300)
+}
+
+.others-img {
+    border-top-left-radius: 8px;
+    height: 150px;
+    background: url('../imgs/slider2.svg') center center no-repeat;
+    background-size: cover;
+}
+
+.others-sections p {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* End Others */
