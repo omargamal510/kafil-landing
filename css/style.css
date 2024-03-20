@@ -12,7 +12,12 @@
 :root {
     --grey-400: #8692A6;
     --grey-500: #696F79;
-    --primary-900: #1DBF73
+    --grey-50: #F6F6F6;
+    --grey-800: #333333;
+    --grey-300: #C3C5C8;
+    --grey-100: #F2F2F2;
+    --primary-900: #1DBF73;
+    --primary-100: #E9F9F1;
 }
 
 /* main variables */
@@ -93,19 +98,527 @@ nav {
 
 /* End Slogan */
 
-/* Start Profile card */
-.profile-card {
-    box-shadow: 0px 3px 40px -5px #20202012;
-    background-color: #FFF;
-    border-radius: 8px;
-    padding: 15px;
+
+/* Start Slider */
+.carousel-indicators {
+    bottom: 20px;
 }
 
-.profile-card h2 {
-    color: #000;
+.carousel-indicators .crs {
+    border-radius: 50%;
+    height: 10px !important;
+    width: 10px !important;
+}
+
+.carousel-indicators button.active {
+    background-color: var(--primary-900);
+}
+
+
+.carousel-control-next,
+.carousel-control-prev {
+    margin: 0px 15px;
+    color: #FFF !important;
+    background-color: #ffffff7c !important;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    top: 45%;
+    transform: translateY(-50%, -50%);
+    opacity: 1 !important;
+    transition: all .2s linear;
+    font-weight: 100;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+    background-color: #FFF !important;
+    color: var(--primary-900) !important;
+}
+
+.carousel-control-next {}
+
+.carousel-control-next span:first-of-type,
+.carousel-control-prev span:first-of-type {
+    color: #000 !important;
+    opacity: 1 !important;
+}
+
+
+
+
+
+/* End Slider */
+
+
+/* Start Description */
+.desc h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 28.8px;
+    letter-spacing: 0.5%;
+}
+
+.desc p {
+    background-color: #FFF;
+    padding: 40px;
     font-size: 16px;
-    line-height: 19.2px;
+    font-weight: 500;
+    letter-spacing: 0.5%;
+    box-shadow: 0px 3px 40px -5px #20202012;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+/* End Description */
+
+/* Start Services */
+.selector {
+    cursor: pointer;
+    padding: 10px;
+    height: 40px;
+    width: 40px;
+    accent-color: green;
+    clip-path: circle(40% at 50% 50%);
+}
+
+.border-selector {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 48px;
+    border: 2px solid #CCC;
+    border-radius: 50%;
+}
+
+.services .service p {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19.68px;
+}
+
+.select-all {
+    background-color: #f6f6f6;
+    border: none;
+    color: var(--grey-300)
+}
+
+.checkbox-round {
+    width: 1.3em;
+    height: 1.3em;
+    border-radius: 50%;
+    vertical-align: middle;
+    border: 1px solid #ddd;
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.checkbox-round:checked {
+    background-color: gray;
+}
+
+.labo {
+    position: relative;
+}
+
+.lab {
+    position: absolute;
+    right: 0;
+    left: 5px;
+    z-index: -1;
+}
+
+.checkbox-round:checked {
+    background-color: gray;
+}
+
+.service-info {
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 10px 5px 10px 5px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    background-color: var(--primary-100);
+    color: var(--primary-900);
+}
+
+
+.check-div {
+    width: 35px;
+    height: 30px;
+    background-color: #FFF;
+    border: 1px solid var(--grey-300);
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.dummy-active {
+    background-color: var(--primary-900);
+}
+
+/* End Services */
+
+/* Start Purchase */
+.purchase-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.purchase-count {
+    min-width: 300px;
+    height: 48px;
+}
+
+.purchase-count p {
+    height: 100%;
+}
+
+.purchase-count p span {
+    margin-top: 20px;
+    display: block;
     font-weight: 600;
 }
 
+.purchase-count button {
+    background-color: #FFF;
+    color: var(--primary-900);
+    border-radius: 50%;
+    border: none;
+    width: 28px;
+    height: 28px;
+}
+
+.purchase-price {
+    min-width: 185px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+.purchase-button {
+    width: 185px;
+    height: 48px;
+    border-radius: 8px;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-weight: 600;
+    font-size: 16px;
+    background-color: var(--primary-900);
+}
+
+.pricing {
+    background-color: var(--grey-50);
+    border-radius: 8px;
+}
+
+/* End Purchase */
+
+
+/* Start Rating */
+.ratings h2 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.rate-num {
+    margin-top: 15px;
+}
+
+
+.ratings h3 {
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.rating-star {
+    cursor: pointer;
+}
+
+.rating-count {
+    margin-top: -5px;
+}
+
+.range-rate {
+    width: 300px;
+    background-color: var(--grey-300);
+    height: 8px;
+    border-radius: 6px;
+}
+
+.range-rate section {
+    border-radius: 6px;
+    width: 80%;
+    background-color: #FFCB31;
+    height: 100%;
+}
+
+/* End Rating  */
+
+
+/* Start Comments */
+.comment-rate {
+    margin-top: -10p
+}
+
+.comment-title {
+    margin-left: 10px;
+}
+
+.comments h6 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+.comments p {
+    line-height: 17.07px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--grey-800);
+}
+
+.comment-time {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--grey-400);
+}
+
+
+.comment-add textarea {
+    display: block;
+    flex: 1;
+    width: 100%;
+    height: 168px;
+    border-radius: 8px;
+    background-color: var(--grey-50);
+    color: var(--grey-400);
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.comment-add img {
+    align-self: flex-start;
+}
+
+.comment-add button {
+    width: 185px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: Center;
+    border-radius: 8px;
+    border: none;
+    color: #FFF;
+    background-color: var(--primary-900);
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+/* End Comments */
+
+
+/* Start Suggest */
+.suggest {
+    background-color: #FFF;
+}
+
+.suggest .heart-div {
+    background-color: #FFF;
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.suggest .heart-div i {
+    border: 1px solid #F00;
+}
+
+.suggest-img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+    height: 300px;
+    background: url('../imgs/slider2.svg') center center no-repeat;
+    background-size: cover
+}
+
+.suggest-p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.suggest-stat p {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--grey-400);
+}
+
+.suggest-user>div p {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.suggest-price {
+    font-size: 16px !important;
+    font-weight: 600;
+}
+
+/* End Suggest */
+
+
+
+
+/* ============= Right side ============= */
+/* ============= Right side ============= */
+/* ============= Right side ============= */
+/* ============= Right side ============= */
+/* ============= Right side ============= */
+/* ============= Right side ============= */
+/* ============= Right side ============= */
+
+
+
+
+/* Right side mains */
+.right-main {}
+
+
+.right-side-white {
+    box-shadow: 0px 3px 40px -5px #20202012;
+    background-color: #FFF;
+    border-radius: 8px;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.right-side-white h2 {
+    color: #000;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Right side mains */
+
+
+
+/* Start Profile card */
+
+
+
+.profile-card .seller-name {
+    margin-top: 15px;
+}
+
+.profile-rate {
+    margin-top: -10px;
+}
+
+.profile-links a {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    background-color: var(--grey-50);
+}
+
+.profile-desc p {
+    color: var(--grey-800);
+    font-weight: 500;
+    line-height: 16.8px;
+    letter-spacing: 0.5%;
+    margin-top: 15px;
+}
+
+
+.profile-contact {
+    width: 100%;
+}
+
+.profile-contact button {
+    background-color: var(--primary-900);
+    color: #FFF;
+    border: none;
+    border-radius: 8px;
+    width: 100% !important;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 /* End Profile Card */
+
+
+/* Make the same thing in one class */
+
+
+/* Start Info */
+.info h3 {
+    font-size: 14px;
+    font-weight: 500px;
+    color: #000;
+    margin-top: 3px;
+}
+
+.info p {
+    font-weight: 500;
+}
+
+/* End Info */
+
+/* Start Others */
+.others h2 {
+    font-size: 16px !important;
+    font-weight: 600;
+}
+
+.others-sections {
+    margin-top: 15px;
+}
+
+.others h6 {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--grey-300)
+}
+
+.others-img {
+    border-top-left-radius: 8px;
+    height: 150px;
+    background: url('../imgs/slider2.svg') center center no-repeat;
+    background-size: cover;
+}
+
+.others-sections p {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* End Others */
