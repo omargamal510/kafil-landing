@@ -335,19 +335,159 @@ nav {
     font-weight: 600;
 }
 
+.rate-num {
+    margin-top: 15px;
+}
+
 
 .ratings h3 {
+    margin-top: 5px;
     font-size: 16px;
     font-weight: 500;
 }
 
-.rating-star {}
+.rating-star {
+    cursor: pointer;
+}
+
+.rating-count {
+    margin-top: -5px;
+}
+
+.range-rate {
+    width: 300px;
+    background-color: var(--grey-300);
+    height: 8px;
+    border-radius: 6px;
+}
+
+.range-rate section {
+    border-radius: 6px;
+    width: 80%;
+    background-color: #FFCB31;
+    height: 100%;
+}
 
 /* End Rating  */
 
 
+/* Start Comments */
+.comment-rate {
+    margin-top: -10p
+}
+
+.comment-title {
+    margin-left: 10px;
+}
+
+.comments h6 {
+    font-size: 14px;
+    font-weight: 700;
+}
 
 
+.comments p {
+    line-height: 17.07px;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--grey-800);
+}
+
+.comment-time {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--grey-400);
+}
+
+
+.comment-add textarea {
+    display: block;
+    flex: 1;
+    width: 100%;
+    height: 168px;
+    border-radius: 8px;
+    background-color: var(--grey-50);
+    color: var(--grey-400);
+    border: none;
+    padding: 20px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.comment-add img {
+    align-self: flex-start;
+}
+
+.comment-add button {
+    width: 185px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: Center;
+    border-radius: 8px;
+    border: none;
+    color: #FFF;
+    background-color: var(--primary-900);
+    margin-left: 50px;
+    margin-top: 30px;
+}
+
+/* End Comments */
+
+
+/* Start Suggest */
+.suggest {
+    background-color: #FFF;
+}
+
+.suggest .heart-div {
+    background-color: #FFF;
+    width: 40px;
+    height: 40px;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.suggest .heart-div i {
+    border: 1px solid #F00;
+}
+
+.suggest-img {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    overflow: hidden;
+    height: 300px;
+    background: url('../imgs/slider2.svg') center center no-repeat;
+    background-size: cover
+}
+
+.suggest-p {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19.2px;
+}
+
+.suggest-stat p {
+    font-weight: 500;
+    font-size: 14px;
+    color: var(--grey-400);
+}
+
+.suggest-user>div p {
+    font-weight: 600;
+    font-size: 12px;
+}
+
+.suggest-price {
+    font-size: 16px !important;
+    font-weight: 600;
+}
+
+/* End Suggest */
 
 
 
